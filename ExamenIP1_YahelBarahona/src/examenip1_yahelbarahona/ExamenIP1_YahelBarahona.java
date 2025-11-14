@@ -63,17 +63,13 @@ public class ExamenIP1_YahelBarahona {
        public static void Cadenas(String cad1, String cad2) {
        String ban = "";
        
-           for (int i = 0; i < cad1.length(); i++) {
-                   ban += cad1.charAt(i);
+           for (int i = cad1.length() - 1; i >= 0 ; i--) {
+               ban += cad1.charAt(i);
            }
-           System.out.println(ban);
-//           for (int i = cad1.length() - 1; i >= 0 ; i--) {
-//               ban += cad1.charAt(i);
-//           }
-//           if (ban.equals(cad2)) {
-//               System.out.println("Es una rotacion circular");}
-//           else
-//           System.out.println("No es una rotacion circular");
+           if (ban.equals(cad2)) {
+               System.out.println("Es una rotacion circular");}
+           else
+           System.out.println("No es una rotacion circular");
            
        }
     
